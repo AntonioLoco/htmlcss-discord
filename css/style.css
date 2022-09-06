@@ -42,6 +42,7 @@ main section:nth-child(2n + 0){
 header{
     background-image: url("../img/jumbo.png");
     background-size: cover;
+    background-position: center;
 }
 
 /* navigation bar */
@@ -127,39 +128,60 @@ header{
 
 /* Photo del block */
 .flex-container .photo{
-    width: 65%;
+    width: 65%;   
+}
 
-    /* DEBUG */
-    min-height: 150px;
-    background-color: #1e90ff;
-    border: 1px dashed black;    
+.photo img{
+    display: block;
+    width: 100%;
 }
 
 /* Testo del blocco */
 .flex-container .description-photo{
-    width: 35%;
-
-    /* DEBUG */
-    min-height: 150px;
-    background-color: #ffc0cb;
-    border: 1px dashed black;    
+    width: 35%;   
 }
 
-/* Blocco Adv */
+.description-photo h3{
+    font-size: 2.5rem;
+    margin: .5em 0;
+}
+
+/* Big Section */
 .big-section{
     width: 100%;
     padding: 1.5em 0;
 }
 
-/* Contenuto ADV */
 .big-contain{
     width: 100%;
-
-    /* DEBUG */
-    background-color: green;
-    min-height: 300px;
-    border: 1px dashed black;    
+    text-align: center;   
 }
+
+.big-contain h3{
+    font-size: 2.5rem;
+    margin: .5em 0;
+}
+
+.big-contain img{
+    width: 80%;
+}
+
+#stars-decoration{
+    width: 50%;
+}
+
+.big-contain h4{
+    font-size: 1.5rem;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+
+.big-contain a{
+    color: white;
+    background-color: #7289da;
+}
+
+
 
 
 /* FOOTER */
