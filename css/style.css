@@ -26,6 +26,9 @@ main section:nth-child(2n + 0){
     background-color: lightgrey;
 }
 
+ul{
+    list-style-type: none;
+}
 
 /* Buttons */
 .btn{
@@ -70,7 +73,6 @@ header{
 }
 
 .header-menu ul{
-    list-style-type: none;
     text-align: center;
 }
 
@@ -182,8 +184,6 @@ header{
 }
 
 
-
-
 /* FOOTER */
 footer{
     background-color:#23272a;
@@ -191,31 +191,47 @@ footer{
 
 /* Footer top */
 .footer-top{
-    border-bottom: 1px solid white;
-}
-
-.footer-top{
     width: 100%;
-    padding-top: .5em;
+    padding-top: 2em;
     padding-bottom: 1em;
 }
 
+/* Footer Social */
 .footer-social{
-    width: 35%;
-
-    /* DEBUG */
-    min-height: 200px;
-    background-color: #f08080;
-    border: 1px dashed black;    
+    width: 35%; 
+    color: white; 
 }
 
+.footer-social h3{
+    font-size: 2rem;
+    color: #7289da;
+
+    margin-bottom: .5em;
+}
+
+.footer-social img,
+.footer-social span{
+    width: 1.5em;
+    vertical-align: middle;
+}
+
+.footer-social .icone i{
+    padding: 1em .4em;
+}
+
+/* Footer colonne */
 .footer-col{
     width: calc(65% / 4);
+}
 
-    /* DEBUG */
-    min-height: 200px;
-    border: 1px dashed white;    
-    background-color: #20b2aa;
+.footer-col h3{
+    font-weight: bold;
+    color: #7289da;
+}
+
+.footer-col ul li{
+    color: white;
+    margin-top: .5em;
 }
 
 
@@ -223,24 +239,25 @@ footer{
 .footer-bottom{
     width: 100%;
     padding-top: 1em;
+    padding-bottom: 3em;
 }
 
 .sidebar-contain{
     width: 100%;
+    padding-top: 1em;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    /* DEBUG */
-    min-height: 50px;
-    background-color:#7fffd4;
+    border-top: 1px solid #7289da;
 }
 
-.logo-footer,
-.bottone-footer{
-    padding: .1em;
+.logo-footer img{
+    width: 100%;
+}
 
-    /* DEBUG */
-    background-color: lightgrey;
-    border: 1px dashed black;    
+.bottone-footer a{
+    background-color: #7289da;
+    color: white;
 }
