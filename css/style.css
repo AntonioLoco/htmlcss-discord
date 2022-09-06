@@ -13,9 +13,6 @@ html{
 }
 
 .flex-container{
-    width: 70%;
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
 }
 
@@ -30,6 +27,17 @@ main section:nth-child(2n + 0){
 }
 
 
+/* Buttons */
+.btn{
+    display: inline-block;
+    background-color: #fff;
+    text-decoration: none;
+
+    padding: .5em 1em;
+    border-radius: 30px;
+}
+
+
 /* HEADER */
 header{
     background-image: url("../img/jumbo.png");
@@ -37,61 +45,78 @@ header{
 }
 
 /* navigation bar */
-.navbar{
+.header-navbar{
     width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-.flex-container .logo,
-.flex-container .login{
-    width: 25%;
-    padding: .2em;
-    
-    /* DEBUG */
-    background-color: orange;
-    border: 1px dashed black;
+/* Logo header */
+.flex-container .header-logo{
+    width: 20%;
 }
 
-.flex-container .login{
-    text-align: right;
+.header-logo img{
+    width: 80%;
 }
 
-.flex-container .collegamenti{
-    width: 50%;
-    padding: .2em;
-
-    /* DEBUG */
-    background-color: orange;
-    border: 1px dashed black;    
+/* Menu Header */
+.flex-container .header-menu{
+    width: 60%;
+    color: white;
+    justify-content: center;
+    align-items: center;  
 }
 
-.collegamenti ul{
+.header-menu ul{
     list-style-type: none;
     text-align: center;
 }
 
-.collegamenti ul li{
+.header-menu ul li{
     display: inline-block;
+    padding: 0 1em;
 }
 
-/* jubtron */
-.jumbtron{
+/* Command Header */
+.flex-container .header-command{
+    width: 20%;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Jumbtron */
+.header-jumbotron{
     width: 100%;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
 
 .jumbtron-contain{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-
-    /* DEBUG */
-    min-height: 150px;
-    background-color: violet;
-    border: 1px dashed black;    
+    text-align: center;  
 }
 
+.jumbtron-contain h2{
+    font-size: 2rem;
+    margin-bottom: .6em;
+    color: white;
+}
+
+.jumbtron-contain p{
+    margin-bottom: 1em;
+    color: white;
+}
+
+#browser-button{
+    color: white;
+    background-color: #23272a;
+
+    margin-left: .5em;
+}
 
 /* MAIN */
 /* Blocco informazioni */
