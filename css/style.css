@@ -113,18 +113,17 @@ header{
 .jumbtron-contain{
     width: 70%;
     margin: 0 auto;
-    text-align: center;  
+    text-align: center; 
+    color: white;
 }
 
-.jumbtron-contain h2{
+.jumbtron-contain h1{
     font-size: 2rem;
     margin-bottom: .6em;
-    color: white;
 }
 
 .jumbtron-contain p{
     margin-bottom: 1em;
-    color: white;
 }
 
 #browser-button{
@@ -148,7 +147,7 @@ header{
 
 .photo img{
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
 /* Testo del blocco */
@@ -178,11 +177,16 @@ header{
 }
 
 .big-contain img{
-    width: 80%;
+    max-width: 80%;
+}
+
+.cta{
+    max-width: 50% ;
+    margin: 0 auto;
 }
 
 #stars-decoration{
-    width: 50%;
+    max-width: 100%;
 }
 
 .big-contain h4{
@@ -267,7 +271,7 @@ footer{
 }
 
 .logo-footer img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .bottone-footer a{
